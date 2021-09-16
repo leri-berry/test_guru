@@ -21,7 +21,7 @@ tests = Test.create([
 questions = Question.create([
   {body: "What command is used to create a directory?", test_id: tests[0].id},
   {body: "How to create an empty text file?", test_id: tests[0].id},
-  {body: "What command id used to find out the path of the current working directory?", test_id: tests[0].id},
+  {body: "What command is used to find out the path of the current working directory?", test_id: tests[0].id},
   {body: "How to create a new branch and switch to it?", test_id: tests[1].id},
   {body: "Write command that saves the uncommitted changes locally, allowing you to make changes and perform other Git operations.", test_id: tests[1].id},
   {body: "Command that allows you to view your git log as a graph", test_id: tests[1].id},
