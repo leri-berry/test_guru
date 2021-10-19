@@ -9,8 +9,12 @@ class Test < ApplicationRecord
   scope :moderate, -> { where(level: 2..4) }
   scope :difficult, -> { where(level: 5..Float::INFINITY) }
 
-  scope :sort_by_category, -> (category_title) {joins(:category).where(categories: { title: category_title}).order(title: :desc).pluck(:title)}
+  scope :by_category, -> (category_title) {joins(:category).where(categories: { title: category_title})
 
   validates :title, presence: true, uniqueness: { scope: :level}
   validates :level, numericality: {only_integer: true, greater_than: 0}
+
+  def self.sort_by_category(category_title)
+    by_category.order(title: :desc).pluck(:title)
+  end
 end
