@@ -9,10 +9,6 @@ class QuestionsController < ApplicationController
     @questions = @test.questions
   end
 
-  #def show
-    #@question
-  #end
-
   def new
     @question = @test.questions.new
   end
