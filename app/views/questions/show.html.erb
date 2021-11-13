@@ -1,13 +1,12 @@
-<table>
+<h1>Question: </h1>
+<%= @question.body %>
 
-  <tr>
-    <th align="left">Question</th>
-    <th align="left">Test ID</th>
-    <th colspan= "3">Actions</th>
-  </tr>
+<h2>Answers</h2>
+<%= link_to 'New answer', new_question_answer_path(@question) %>
 
-  <%= render @question %>
-  
-</table>
+
+<ol> 
+  <%= render @question.answers %>    
+</ol>
 
 <%= link_to 'Back', @question.test %>
