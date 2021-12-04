@@ -1,7 +1,6 @@
 class Admin::TestsController < Admin::BaseController
   
   before_action :set_test, only: %i[show edit update destroy start]
-  #before_action :set_user, only: %i[start]
 
   def show
     @test
@@ -16,7 +15,6 @@ class Admin::TestsController < Admin::BaseController
   end
 
   def create
-    @test = Test.new(test_params)
     @test = current_user.author_tests.build(test_params)
 
     if @test.save
@@ -38,12 +36,6 @@ class Admin::TestsController < Admin::BaseController
     @test.destroy
     redirect_to admin_tests_path
   end
-
-  def start
-    current_user.tests.push(@test)
-    redirect_to current_user.test_passage(@test)
-  end
-  
   
   private
 

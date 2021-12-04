@@ -32,40 +32,4 @@
 
 
 #Ignore extra files
- /vendor/bundle/ruby/2.7.0/extensions/x86_64-linux/2.7.0/bcrypt-3.1.16/bcrypt_ext.so
- /vendor/bundle/ruby/2.7.0/extensions/x86_64-linux/2.7.0/bcrypt-3.1.16/gem.build_complete
- /vendor/bundle/ruby/2.7.0/extensions/x86_64-linux/2.7.0/bcrypt-3.1.16/gem_make.out
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/.gitignore
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/.rspec
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/.travis.yml
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/CHANGELOG
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/COPYING
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/Gemfile
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/README.md
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/Rakefile
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/appveyor.yml
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/bcrypt.gemspec
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/jruby/bcrypt_jruby/BCrypt.java
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri/.sitearchdir.time
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri/Makefile
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri/bcrypt_ext.c
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri/crypt.c
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri/crypt.h
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri/crypt_blowfish.c
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri/crypt_blowfish.h
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri/crypt_gensalt.c
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri/crypt_gensalt.h
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri/extconf.rb
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri/ow-crypt.h
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri/wrapper.c
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri/x86.S
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/lib/bcrypt.rb
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/lib/bcrypt/engine.rb
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/lib/bcrypt/error.rb
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/lib/bcrypt/password.rb
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/spec/TestBCrypt.java
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/spec/bcrypt/engine_spec.rb
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/spec/bcrypt/error_spec.rb
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/spec/bcrypt/password_spec.rb
- /vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.16/spec/spec_helper.rb
- /vendor/bundle/ruby/2.7.0/specifications/bcrypt-3.1.16.gemspec
+ /vendor/bundle
