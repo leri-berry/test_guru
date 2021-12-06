@@ -41,6 +41,7 @@ en:
         success: "Test was created"
       new:
         header: "Create a test"
+        back: "Back"
       edit:
         header: "Edit a test"
         back: "Back"
