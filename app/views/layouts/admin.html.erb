@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <title>Admin TestGuru panel</title>
-  <%= csrf_meta_tags %>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin TestGuru panel</title>
+    <%= csrf_meta_tags %>
 
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-<body>
-<%= render 'admin/nav' %>
-<%= render 'shared/flash' %>
+  <body>
+    <%= render 'admin/nav' %>
 
-<%= yield %>
-</body>
+    <div class="container">
+    <%= render 'shared/flash' %>
+    <%= yield %>
+    
+    </div>
+  </body>
 </html>
