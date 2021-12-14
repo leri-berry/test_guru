@@ -29,6 +29,12 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.0'
 
 
+#NETWORKING
+gem 'faraday'
+gem 'octokit', '~> 4.0'
+gem 'dotenv-rails'
+
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

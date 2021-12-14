@@ -17,5 +17,6 @@ module Testguru
     # the framework and any gems in your application.
     config.time_zone = "Europe/Minsk"
     config.i18n.default_locale = :ru
+    config.autoload_paths << "#{Rails.root}/lib/clients"
   end
 end

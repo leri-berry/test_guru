@@ -31,5 +31,5 @@
 /config/master.key
 
 
-#Ignore extra files
-/vendor/bundle
+#Ignore_token
+/.env
