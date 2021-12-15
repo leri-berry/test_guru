@@ -33,3 +33,6 @@
 
 #Ignore_token
 /.env
+
+#Ignore_gems
+/vendor/bundle
