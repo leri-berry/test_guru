@@ -1,36 +1,35 @@
 class GistQuestionService
 
-	def initialize(question, client: nil)
-		@question = question
-		@test = @question.test
-		@client = client || GitHubClient.new
-	end
+  def initialize(question, client: nil)
+    @question = question
+    @test = @question.test
+    @client = client || Octokit::Client.new(access_token: ENV['GITHUB_TOKEN'])
+  end
 
-	def call
-		@client.create_gist(gist_params)
-	end
+  def call
+    @client.create_gist(gist_params)
+  end
 
-	def success?
-		@client.client.last_response.status == 201
-	end
+  def success?
+    @client.client.last_response.status == 201
+  end
 
-	private
+  private
 
-	def gist_params
-		{
-			description: "A question about #{@test.title} from TestGuru",
+  def gist_params
+    {
+      description: "A question about #{@test.title} from TestGuru",
       files: {
-     	'test-guru-question.txt' => {
-     		content: gist_content
-     	}
+      'test-guru-question.txt' => {
+        content: gist_content
+      }
      }
-	  }
-	end
+    }
+  end
 
-	def gist_content
-		content = [@question.body]
-		content+= @question.answers.pluck(:body)
-		content.join("\n")
-	end
+  def gist_content
+    content = [@question.body]
+    content+= @question.answers.pluck(:body)
+    content.join("\n")
+  end
 end
-
