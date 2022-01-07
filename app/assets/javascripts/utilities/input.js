@@ -5,7 +5,7 @@ document.addEventListener('turbolinks:load', function() {
   if (password && confirm_password) {
     password.addEventListener('input', validate)
     confirm_password.addEventListener('input', validate)}
-})
+  })
 
 function validate() {
   var password = document.getElementById("user_password").value;
@@ -15,13 +15,13 @@ function validate() {
     this.classList.remove('bg-success')
     this.classList.add('bg-light')
     return;
-    }
+  }
 
-    if (password != confirm_password) {
-      this.classList.remove('bg-success')
-      this.classList.add('bg-danger')
-    } else {
-      this.classList.remove('bg-danger')
-      this.classList.add('bg-success')
-    }
+  if (password != confirm_password) {
+    this.classList.remove('bg-success')
+    this.classList.add('bg-danger')
+  } else {
+    this.classList.remove('bg-danger')
+    this.classList.add('bg-success')
+  }
 }
