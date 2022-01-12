@@ -26,7 +26,13 @@ ru:
   test_passages:
     gist:
       success: "Gist успешно сохранен! %{url}"
-      failure: "Во время сохранения gist произошла ошибка"    
+      failure: "Во время сохранения gist произошла ошибка"
+
+  shared:
+    errors:
+      header:
+        one: "Обнаружена %{count} ошибка"
+        many: "Обнаружено %{count} ошибки"   
 
   admin:
     gists:
@@ -48,6 +54,7 @@ ru:
         show: "Открыть"
         delete: "Удалить"
         sure: "Вы уверены?"
+        cancel: "Отмена"
       create:
         success: "Тест создан"
       new:
@@ -63,3 +70,5 @@ ru:
         back: "Назад"
         edit: "Редактировать"
         new_question: "Новый вопрос"
+      form_inline:
+        submit: "ОК"
