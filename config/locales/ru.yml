@@ -32,7 +32,8 @@ ru:
     errors:
       header:
         one: "Обнаружена %{count} ошибка"
-        many: "Обнаружено %{count} ошибки"   
+        many: "Обнаружено %{count} ошибок"
+        other: "Обнаружено %{count} ошибки"
 
   admin:
     gists:
