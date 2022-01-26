@@ -34,4 +34,4 @@
 /.env
 
 #ignore_gems
-/vendor/bundle
+#/vendor/bundle
