@@ -49,6 +49,8 @@ en:
         questions_count: "Questions"
         actions: "Actions"
         create: "Create a test"
+      form_inline:
+        submit: "OK"
       test:
         edit: "Edit"
         show: "Show"

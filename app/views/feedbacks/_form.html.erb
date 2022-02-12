@@ -1,20 +1,14 @@
-<%= form_with(model: feedback, local: true) do |form| %>
-<%= render 'shared/errors', resource: @feedback %>
+<%= form_with url: feedbacks_path, local: true do |form| %>
 
   <p>
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.label :subject, class: 'form-label' %>
+    <%= form.text_field :subject, class: 'form-control' %>
   </p>
 
 
   <p>
-    <%= form.label :email %>
-    <%= form.email_field :email %>
-  </p>
-
-  <p>
-    <%= form.label :message %>
-    <%= form.text_field :message %>
+    <%= form.label :feedback, class: 'form-label' %>
+    <%= form.text_area :feedback, class: 'form-control', rows: 5%>
   </p>
 
   <p><%= form.submit %></p>

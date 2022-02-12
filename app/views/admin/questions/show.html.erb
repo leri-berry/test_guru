@@ -1,12 +1,18 @@
-<h1>Question: </h1>
-<%= @question.body %>
+<h3><%= @question.body %> </h3>
 
-<h2>Answers</h2>
+
+<h3>Answers</h3>
 <%= link_to 'New answer', new_admin_question_answer_path(@question) %>
 
+<table>
+  <tr>
+    <th align="left">Answer</th>
+    <th colspan = "3"><%= t('.actions')%></th>
+  </tr>
 
-<ol> 
-  <%= render @question.answers %>    
-</ol>
+<%= render @question.answers %>
+
+</table>
+
 
 <%= link_to 'Back', admin_test_path(@question.test) %>

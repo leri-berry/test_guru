@@ -11,7 +11,6 @@ class Admin::AnswersController < Admin::BaseController
     @answer = @question.answers.new
   end
 
-  # GET /answers/1/edit
   def edit
   end
 
@@ -19,7 +18,7 @@ class Admin::AnswersController < Admin::BaseController
     @answer = @question.answers.new(answer_params)
 
     if @answer.save
-      redirect_to @answer, notice: "Answer was successfully created."
+      redirect_to admin_answer_path(@answer), notice: "Answer was successfully created."
     else
       render :new
     end
@@ -28,16 +27,15 @@ class Admin::AnswersController < Admin::BaseController
   # PATCH/PUT /answers/1 or /answers/1.json
   def update
     if @answer.update(answer_params)
-      redirect_to @answer
+      redirect_to admin_answer_path(@answer)
     else
       render :edit
     end
   end
 
-  # DELETE /answers/1 or /answers/1.json
   def destroy
     @answer.destroy
-    redirect_to @answer.question
+    redirect_to admin_question_path(@answer.question)
   end
 
   private
@@ -46,7 +44,6 @@ class Admin::AnswersController < Admin::BaseController
     @question = Question.find(params[:question_id])
   end
 
-    # Use callbacks to share common setup or constraints between actions.
   def set_answer
     @answer = Answer.find(params[:id])
   end

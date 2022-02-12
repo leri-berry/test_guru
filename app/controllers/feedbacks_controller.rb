@@ -1,24 +1,15 @@
 class FeedbacksController < ApplicationController
   
-  def new
-    @feedback = Feedback.new
-  end
+  def new; end
 
   def create
-    @feedback = Feedback.new(feedback_params)
-
-    if @feedback.valid?
-    FeedbacksMailer.new_feedback(@feedback).deliver_now
-    redirect_to new_feedback_path
-  else
-    render :new
+    FeedbacksMailer.new_feedback(feedback_params, current_user).deliver_now
+    redirect_to tests_path, notice: t('.success')
   end
-end
 
   private
 
   def feedback_params
-    params.require(:feedback).permit(:name, :email, :message)
+    params.permit(:subject, :feedback)
   end
 end
-
