@@ -10,9 +10,6 @@ class GistQuestionService
     @client.create_gist(gist_params)
   end
 
-  def success?
-    @client.last_response == 201
-  end
 
   private
 
