@@ -6,7 +6,8 @@ document.addEventListener('turbolinks:load', function() {
     var currentNumber = progressBar.dataset.currentNumber
     var count = progressBar.dataset.count
 
-    progressBar.style.width = 100/count * (currentNumber - 1) + "%";
+    progressBar.style.width = (currentNumber - 1) / count * 100 + "%";
 
   }
 })
+

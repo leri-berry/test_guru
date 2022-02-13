@@ -3,7 +3,7 @@
 <%= content_tag :div, 
                 class: "progress-bar progress-bar-striped bg-success",
                 role: "progressbar",
-                data: {current_number: @test_passage.current_question_id, 
+                data: {current_number: @test_passage.current_question_number, 
                 count: @test_passage.test.questions.count },
                 style: "width: 0%" do %>
 <% end %>                

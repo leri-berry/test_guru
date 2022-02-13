@@ -30,6 +30,10 @@ class TestPassage < ApplicationRecord
     result_rate >= SUCCESS_PERCENT
   end
 
+  def current_question_number
+    test.questions.index(current_question) + 1
+  end
+
   private
 
   def before_validation_set_first_question
