@@ -1,13 +1,13 @@
 class GitHubClient
-  attr_reader :client
+  attr_reader :http_client
 
 
   def initialize
-    @client = setup_http_client
+    @http_client = setup_http_client
   end
 
   def create_gist(params)
-    @client.create_gist(params)
+    @http_client.create_gist(params)
   end
 
   private

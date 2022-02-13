@@ -3,7 +3,7 @@ class GistQuestionService
   def initialize(question, client: nil)
     @question = question
     @test = @question.test
-    @client = client || Octokit::Client.new(access_token: ENV['GITHUB_TOKEN'])
+    @client = client || GitHubClient.new
   end
 
   def call
@@ -11,7 +11,7 @@ class GistQuestionService
   end
 
   def success?
-    @client.last_response.status == 201
+    @client.http_client.last_response == 201
   end
 
   private
