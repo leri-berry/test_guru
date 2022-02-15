@@ -30,6 +30,10 @@ class TestPassage < ApplicationRecord
     result_rate >= SUCCESS_PERCENT
   end
 
+  def current_question_number
+    test.questions.index(current_question) + 1
+  end
+
   private
 
   def before_validation_set_first_question
@@ -37,7 +41,7 @@ class TestPassage < ApplicationRecord
   end
 
   def correct_answer?(answer_ids)
-    correct_answers.ids.sort == answer_ids.map(&:to_i).sort
+    answer_ids && correct_answers.ids.sort == answer_ids.map(&:to_i).sort
   end
 
   def correct_answers

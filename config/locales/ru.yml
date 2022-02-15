@@ -23,6 +23,11 @@ ru:
     test:
       start: "Начать"
 
+  feedbacks:
+    create:
+      success: "Отзыв был отправлен"
+      failure: "Отзыв не удалось отправить"   
+
   test_passages:
     gist:
       success: "Gist успешно сохранен! %{url}"
@@ -32,7 +37,8 @@ ru:
     errors:
       header:
         one: "Обнаружена %{count} ошибка"
-        many: "Обнаружено %{count} ошибки"   
+        many: "Обнаружено %{count} ошибок"
+        other: "Обнаружено %{count} ошибки"
 
   admin:
     gists:
@@ -48,7 +54,9 @@ ru:
         level: "Уровень"
         questions_count: "Количество вопросов"
         actions: "Действия"
-        create: "Создать тест"
+        create: "Создать тест"          
+      form_inline:
+        submit: "OK"  
       test:
         edit: "Редактировать"
         show: "Открыть"
@@ -70,5 +78,17 @@ ru:
         back: "Назад"
         edit: "Редактировать"
         new_question: "Новый вопрос"
+        actions: "Действия"
+        edit: "Редактировать"
+        show: "Открыть"
+        delete: "Удалить"
+    questions:
+      show:
+        edit: "Редактировать"
+        show: "Открыть"
+        delete: "Удалить"
+        sure: "Вы уверены?"
+        cancel: "Отмена"
       form_inline:
         submit: "ОК"
+

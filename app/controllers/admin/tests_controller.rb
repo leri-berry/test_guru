@@ -15,7 +15,7 @@ class Admin::TestsController < Admin::BaseController
   end
 
   def create
-    @test = current_user.author_tests.build(test_params)
+    @test = current_user.author_tests.new(test_params)
 
     if @test.save
       redirect_to admin_tests_path, notice: t('.success')
@@ -56,6 +56,6 @@ class Admin::TestsController < Admin::BaseController
   end
 
   def test_params
-    params.require(:test).permit(:title, :level, :category_id)
+    params.require(:test).permit(:title, :level, :category_id, :published)
   end
 end

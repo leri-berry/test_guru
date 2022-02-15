@@ -3,18 +3,18 @@
   <%= @test.title %>
 </p>
 
-<p>
-  <strong><%= t('.level') %></strong>
-  <%= @test.level %>
-</p>
-
-<h4><%= t('.t_questions') %></h4>
 <%= link_to t('.new_question'), new_admin_test_question_path(@test)%>
 
-<ol>
-  <%= render @test.questions %>
-</ol>
+<table>
+  <tr>
+    <th align="left"><%= t('.t_questions')%></th>
+    <th align="left"><%= t('.level') %></th>
+    <th colspan= "3"><%= t('.actions')%></th>
+  </tr>
 
+  <%= render @test.questions %>
+
+</table>
 
 
 <%= link_to t('.back'), admin_tests_path %>

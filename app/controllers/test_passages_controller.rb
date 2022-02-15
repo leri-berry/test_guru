@@ -14,7 +14,7 @@ class TestPassagesController < ApplicationController
     service = GistQuestionService.new(@test_passage.current_question);
     result = service.call
 
-    flash_options = if service.success?
+    flash_options = if result.success?
       current_user.gists.create(
         question: @test_passage.current_question, url: result.html_url)
 
@@ -30,7 +30,7 @@ class TestPassagesController < ApplicationController
     @test_passage.accept!(params[:answer_ids])
 
     if @test_passage.completed?
-      TestMailer.completed_test(@test_passage).deliver_now
+      TestsMailer.completed_test(@test_passage).deliver_now
       redirect_to result_test_passage_path(@test_passage) 
     else
       render :show

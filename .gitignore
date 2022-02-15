@@ -30,7 +30,7 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-#Ignore_token
+#ignore_github_token
 /.env
 
 #ignore_gems

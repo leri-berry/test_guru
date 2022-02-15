@@ -1,0 +1,15 @@
+<%= form_with url: feedbacks_path, local: true do |form| %>
+
+  <p>
+    <%= form.label :subject, class: 'form-label' %>
+    <%= form.text_field :subject, class: 'form-control' %>
+  </p>
+
+
+  <p>
+    <%= form.label :feedback, class: 'form-label' %>
+    <%= form.text_area :feedback, class: 'form-control', rows: 5%>
+  </p>
+
+  <p><%= form.submit %></p>
+<% end %>

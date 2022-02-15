@@ -2,7 +2,7 @@ ru:
   activerecord:
     models:
       test: "Тест"
-
+      
     attributtes:
       test:
         title: "Название"
