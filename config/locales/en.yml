@@ -4,6 +4,8 @@ en:
       test:
         create: "Create a test"
         update: "Update a test"
+      badge:
+        create: "Create a badge"   
     select:
       prompt: "Please select"
 
@@ -12,6 +14,11 @@ en:
         title: "Title"
         level: "Level"
         category_id: "Category"
+    label:
+      badge:
+        title: "Title"
+        rule: "Rule"
+        url: "Image"    
 
   tests:
     index:
@@ -22,17 +29,26 @@ en:
       actions: "Actions"
     test:
       start: "Start"
+  badges:
+    index:
+      header: "Available badges"
+      title: "Title"
+      rule: "Rule"
 
   test_passages:
     gist:
       success: "Gist was successfully created! %{url}"
       failure: "An error occurred while saving gist"
+    update:
+      badge: "A badge was earned"  
 
   shared:
     errors:
       header:
         one: "%{count} error detected"
-        many: "%{count} errors detected"      
+        many: "%{count} errors detected"
+    nav:
+      badge: "Badges"           
 
   admin:
     gists:
@@ -49,6 +65,7 @@ en:
         questions_count: "Questions"
         actions: "Actions"
         create: "Create a test"
+        badge: "Manage badges"
       form_inline:
         submit: "OK"
       test:
@@ -73,4 +90,20 @@ en:
         edit: "Edit"
         new_question: "New question"
       form_inline:
-        submit: "OK" 
+        submit: "OK"
+
+    badges:
+      index:
+        header: "Available badges"
+        title: "Title"
+        rule: "Rule"
+        actions: "Actions"
+        create: "Create a badge"
+      new:
+        header: "New badge"        
+      create:
+        success: "Badge was created"
+      edit:
+        header: "Edit a badge"
+      update:
+        success: "Badge was updated"  

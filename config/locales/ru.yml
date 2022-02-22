@@ -4,14 +4,22 @@ ru:
       test:
         create: "Создать тест"
         update: "Обновить тест"
+      badge:
+        create: "Создать бейдж"  
     select:
-      prompt: "Выберите категорию"
+      prompt: "Пожалуйста выберете"
 
     label:
       test:
         title: "Название"
         level: "Уровень"
         category_id: "Категория"
+    label:
+      badge:
+        title: "Название"
+        rule: "Правило"
+        url: "Изображение"
+    
 
   tests:
     index:
@@ -23,6 +31,13 @@ ru:
     test:
       start: "Начать"
 
+  badges:
+    index:
+      header: "Доступные бейджи"
+      earned_badges: "Заработанные бейджи"
+      title: "Название"
+      rule: "Правило"    
+
   feedbacks:
     create:
       success: "Отзыв был отправлен"
@@ -32,6 +47,8 @@ ru:
     gist:
       success: "Gist успешно сохранен! %{url}"
       failure: "Во время сохранения gist произошла ошибка"
+    update:
+      badge: "Заработан бейдж"
 
   shared:
     errors:
@@ -39,6 +56,8 @@ ru:
         one: "Обнаружена %{count} ошибка"
         many: "Обнаружено %{count} ошибок"
         other: "Обнаружено %{count} ошибки"
+    nav:
+      badge: "Бейджи"    
 
   admin:
     gists:
@@ -54,7 +73,8 @@ ru:
         level: "Уровень"
         questions_count: "Количество вопросов"
         actions: "Действия"
-        create: "Создать тест"          
+        create: "Создать тест"
+        badge: "Управление бейджами"          
       form_inline:
         submit: "OK"  
       test:
@@ -92,3 +112,20 @@ ru:
       form_inline:
         submit: "ОК"
 
+    badges:
+      index:
+        header: "Доступные бейджи"
+        title: "Название"
+        url: "Изображение"
+        rule: "Правило"
+        actions: "Действия"
+        create: "Создать бейдж"
+        badge: "Существующие бейджи"
+      new:
+        header: "Новый бейдж"
+      create:
+        success: "Бейдж создан"
+      edit:
+        header: "Редактирование бейджа"  
+      update:
+        success: "Бейдж был обновлен"  

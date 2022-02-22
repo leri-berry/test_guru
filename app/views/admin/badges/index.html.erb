@@ -1,0 +1,16 @@
+<h3><%= t('.header') %></h3>
+
+<p>
+<%= link_to t('.create'), new_admin_badge_path %>
+</p>
+
+<table class = 'table'>
+  <tr>
+    <th align="left"><%= t('.title')%></th>
+    <th align="left"><%= t('.rule')%></th>
+    <th align="center" colspan= "2"><%= t('.actions')%></th>
+  </tr>
+
+  <%= render @badges %>
+
+</table>

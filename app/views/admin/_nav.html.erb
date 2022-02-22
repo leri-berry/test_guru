@@ -1,5 +1,6 @@
 <nav class="navbar navbar-light bg-light">
   <%= link_to 'TestGuru', admin_tests_path, class: 'navbar-brand'%>
+  <%= link_to t('.badge'), admin_badges_url, class: 'navbar-text'%>
 
   <span class="navbar-text">
      <% if user_signed_in? %>

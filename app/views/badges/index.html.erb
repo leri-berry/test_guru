@@ -1,0 +1,28 @@
+<h3><%= t('.header') %></h3>
+
+
+<table class="table">
+  <tr>
+    <th align="left"><%= t('.title')%></th>
+    <th align="left"><%= t('.rule')%></th>
+    <th align="left"><%= t('.image')%></th>
+  </tr>
+
+  <%= render @badges %>
+
+</table>
+
+
+<h3><%= t('.earned_badges') %></h3>
+
+
+<table class = 'table'>
+  <tr>
+    <th align="left"><%= t('.title')%></th>
+    <th align="left"><%= t('.rule')%></th>
+  </tr>
+
+  <%= render @user_badges %>
+
+</table>
+
