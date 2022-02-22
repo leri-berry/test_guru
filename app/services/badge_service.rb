@@ -1,5 +1,5 @@
 class BadgeService
-
+  
   CATEGORY_ID = 1
 
   def initialize(test_passage)

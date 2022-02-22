@@ -27,6 +27,7 @@ en:
       level: "Level"
       questions_count: "Questions"
       actions: "Actions"
+      badge: "See badges"
     test:
       start: "Start"
   badges:
@@ -34,6 +35,7 @@ en:
       header: "Available badges"
       title: "Title"
       rule: "Rule"
+      image: "Image"
 
   test_passages:
     gist:
@@ -99,6 +101,7 @@ en:
         rule: "Rule"
         actions: "Actions"
         create: "Create a badge"
+        image: "Image"
       new:
         header: "New badge"        
       create:

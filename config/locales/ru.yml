@@ -28,6 +28,7 @@ ru:
       level: "Уровень"
       questions_count: "Количество вопросов"
       actions: "Действия"
+      badge: "Посмотреть бейджи"
     test:
       start: "Начать"
 
@@ -36,7 +37,9 @@ ru:
       header: "Доступные бейджи"
       earned_badges: "Заработанные бейджи"
       title: "Название"
-      rule: "Правило"    
+      rule: "Правило"
+      image: "Изображение"
+
 
   feedbacks:
     create:
@@ -121,6 +124,7 @@ ru:
         actions: "Действия"
         create: "Создать бейдж"
         badge: "Существующие бейджи"
+        image: "Изображение" 
       new:
         header: "Новый бейдж"
       create:
