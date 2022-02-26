@@ -12,9 +12,16 @@
   </p>
 
   <p>
+    <%= form.label :value, class: 'form-label' %>
+    <%= form.text_field :value, class: 'form-control'%>
+  </p>
+
+  <p>
     <%= form.label :url, class: 'form-label' %>
     <%= form.select :url, %i"badge.png", {prompt: true}, class: 'form-select' %>
   </p>
+
+
 
 
   <p><%= form.submit %></p>
