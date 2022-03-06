@@ -1,4 +1,14 @@
 <h1>Passing the <%= @test_passage.test.title %> test</h1>
+
+<div class = "timer">
+<% if @test_passage.test.time_limit > 0 %>
+ <%= content_tag :div,
+                 class: "countdown col-12 col-md-8",
+                 data: {time_left: @test_passage.time_left} do %>
+<%end%>
+<%end%>
+</div>
+
 <div class = "progress">
 <%= content_tag :div, 
                 class: "progress-bar progress-bar-striped bg-success",
@@ -22,5 +32,6 @@
   <% end %>
 
   <p><%= link_to 'Gist Question', gist_test_passage_path(@test_passage), method: :post %></p>
-  <p><%= form.submit 'Next' %></p>
+  <p><%= form.submit 'Next', class: 'btn btn-primary mt-4', id: "submit-form" %></p>
 <%end%>
+
