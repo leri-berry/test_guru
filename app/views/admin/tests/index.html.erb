@@ -4,9 +4,13 @@
 <%= link_to t('.create'), new_admin_test_path %>
 </p>
 
+<p>
+<%= link_to t('.badge'), admin_badges_url %>
+</p>
+
 <%= render 'shared/errors', resource: @test %>
 
-<table>
+<table class="table">
   <tr>
     <th align="left"><%= t('.title')%></th>
     <th align="left"><%= t('.level')%></th>
@@ -17,3 +21,4 @@
   <%= render @tests %>
 
 </table>
+

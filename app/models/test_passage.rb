@@ -9,6 +9,10 @@ class TestPassage < ApplicationRecord
 
   before_validation :before_validation_set_first_question, on: :create
 
+  scope :success, -> { where(passed: true) }
+
+
+
   def completed?
     current_question.nil?
   end

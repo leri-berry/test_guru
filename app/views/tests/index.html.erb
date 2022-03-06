@@ -1,6 +1,6 @@
-<div class="row justify-content-center">
-  <div class="col col-md-4">
     <h2><%= t('.header') %></h2>
+
+    <%= link_to t('.badge'), badges_url, class: 'navbar-text'%>
 
     <table class="table">
       <tr>
@@ -17,5 +17,3 @@
 
   <%= render @tests %>
     </table>
-  </div>
-</div>
