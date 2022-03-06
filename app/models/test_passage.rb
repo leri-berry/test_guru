@@ -14,7 +14,15 @@ class TestPassage < ApplicationRecord
 
 
   def completed?
-    current_question.nil?
+    current_question.nil? || time_expired?
+  end
+
+  def time_expired?
+    test.time_limit? && time_left.negative?
+  end
+
+  def time_left
+    self.created_at - Time.now + test.time_limit * 60
   end
 
   def accept!(answer_ids)
